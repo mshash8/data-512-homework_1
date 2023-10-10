@@ -6,7 +6,7 @@ The primary goal of this project is to conduct an in-depth analysis of Wikipedia
 ## Data Acquistion and API Documentation
 The section below details the steps for data acquistion. We have:
 
-1. An excel sheet defining the subset of the English Wikipedia that represents a large number of articles about academy award winning movies. This sheet can be downloaded at: https://docs.google.com/spreadsheets/d/1A1h_7KAo7KXaVxdScJmIVPTvjb3IuY9oZhNV4ZHxrxw/edit?usp=sharing
+1. An excel [sheet](https://docs.google.com/spreadsheets/d/1A1h_7KAo7KXaVxdScJmIVPTvjb3IuY9oZhNV4ZHxrxw/edit?usp=sharing) defining the subset of the English Wikipedia that represents a large number of articles about academy award winning movies. 
 2. The Pageviews API which provides access to desktop, mobile web, and mobile app traffic data from July 2015 through the previous complete month. There is also available [documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews) and information about the [endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end) for this API can be found at: 
 
 A sample request template of the API looks like:
