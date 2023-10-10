@@ -78,9 +78,6 @@ This project is open-source and follows the MIT License. You are free to use and
     3. academy_monthly_cumulative_start201501-end202309.json
 * Create Dataframes from the list of dictionaries generated in the previous step.
 * Utilize these DataFrames to create and plot three visualizations:
-* Maximum Average and Minimum Average: Time series for articles with the highest and lowest average monthly page requests for desktop and mobile access.
-* Top 10 Peak Page Views: Time series for the top 10 article pages by largest (peak) page views over the entire time, categorized by access type.
-* Fewest Months of Data: Display articles with the fewest months of available data for desktop and mobile access.
 
 ## Output Files
 The project generates three JSON files:
