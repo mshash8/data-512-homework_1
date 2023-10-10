@@ -67,15 +67,15 @@ LICENSE File: Contains the MIT LICENSE for the project's code, ensuring it is fr
 This project is open-source and follows the MIT License. You are free to use and modify the code according to the terms of the MIT License.
 
 ## Reproducibility
-Import and if necessary pip install the python libraries into your notebook.
-Run the Jupyter Notebook cells which call the API and read the Excel File that needs to present in the same directory as the notebook to run successful.
-Store fetched data in the form of a list of dictionaries in Python. Combine data for mobile website and app access.
-Create three lists representing views on mobile, desktop, and cumulative (mobile + desktop).
-Write these lists of dictionaries into three separate JSON files:
+* Import and if necessary pip install the python libraries into your notebook.
+* Run the Jupyter Notebook cells which call the API and read the Excel File that needs to present in the same directory as the notebook to run successful.
+* Store fetched data in the form of a list of dictionaries in Python. Combine data for mobile website and app access.
+* Create three lists representing views on mobile, desktop, and cumulative (mobile + desktop).
+* Write these lists of dictionaries into three separate JSON files:
 
-academy_monthly_desktop_<start201501>-<end202309>.json
-academy_monthly_mobile_<start201501>-<end202309>.json
-academy_monthly_cumulative_<start201501>-<end202309>.json
+academy_monthly_desktop_start201501-end202309.json
+academy_monthly_mobile_start201501-end202309.json
+academy_monthly_cumulative_start201501-end202309.json
 Create Dataframes from the list of dictionaries generated in the previous step.
 
 Utilize these DataFrames to create and plot three visualizations:
