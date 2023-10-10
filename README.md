@@ -6,9 +6,34 @@ The primary goal of this project is to conduct an in-depth analysis of Wikipedia
 ## Data Acquistion and API Documentation
 The section below details the steps for data acquistion. We have:
 
-An excel sheet defining the subset of the English Wikipedia that represents a large number of articles about academy award winning movies. This sheet can be downloaded at: https://docs.google.com/spreadsheets/d/1A1h_7KAo7KXaVxdScJmIVPTvjb3IuY9oZhNV4ZHxrxw/edit?usp=sharing
-The Pageviews API which provides access to desktop, mobile web, and mobile app traffic data from July 2015 through the previous complete month. The documentation for this API can be found at: https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews and the endpoint can be found at: https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end
+1. An excel sheet defining the subset of the English Wikipedia that represents a large number of articles about academy award winning movies. This sheet can be downloaded at: https://docs.google.com/spreadsheets/d/1A1h_7KAo7KXaVxdScJmIVPTvjb3IuY9oZhNV4ZHxrxw/edit?usp=sharing
+2. The Pageviews API which provides access to desktop, mobile web, and mobile app traffic data from July 2015 through the previous complete month. There is also available [documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews) and information about the [endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end) for this API can be found at: 
 
+A sample request template of the API looks like:
+```
+ARTICLE_PAGEVIEWS_DESKTOP_PARAMS_TEMPLATE = {
+    "project":     "en.wikipedia.org",
+    "access":      "desktop",      
+    "agent":       "user",
+    "article":     "",             
+    "granularity": "monthly",
+    "start":       "2015070100",   
+    "end":         "2023093000"    
+}
+```
+
+
+A sample response of the API looks like:
+```
+{'project': 'en.wikipedia',
+  'article': '12_Years_a_Slave_(film)',
+  'granularity': 'monthly',
+  'timestamp': '2015070100',
+  'agent': 'user',
+  'views': 75458}
+````
+
+**Note**
 A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/1XjFhd3eXx704tcdfQ4Q1OQn0LWKCRNJm/view?usp=sharing) and this sample code is licensed [CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 ## Platform
