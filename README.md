@@ -34,7 +34,7 @@ A sample response of the API looks like:
 ````
 
 **Note**
-A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/1XjFhd3eXx704tcdfQ4Q1OQn0LWKCRNJm/view?usp=sharing) and this sample code is licensed [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/1XjFhd3eXx704tcdfQ4Q1OQn0LWKCRNJm/view?usp=sharing) and this sample code is licensed [CC-BY](https://creativecommons.org/licenses/by/4.0/). This code was modified to include templates for other access types.
 
 ## Platform
 This project was run on jupyter notebook on localhost. 
